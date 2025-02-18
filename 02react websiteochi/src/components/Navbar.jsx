@@ -1,11 +1,11 @@
 import React from "react";
-
+import { CiMenuFries } from "react-icons/ci";
 
 export const Navbar = () => {
   
 
   return (
-    <div className="fixed backdrop-blur-sm z-[999] w-full px-20 py-8 font-['new'] flex justify-between align-middle text-white">
+    <div className="fixed backdrop-blur-sm z-[999] w-full px-10 md:px-20 py-8 font-['new'] flex justify-between align-middle text-white">
       <div className="logo">
         <svg
           width="72"
@@ -36,7 +36,7 @@ export const Navbar = () => {
           ></path>
         </svg>
       </div>
-      <div className="links flex gap-10">
+      <div className="links hidden gap-[4vw]  md:flex">
       {[
     { text: "Services", href: "/services" },
     { text: "Our Work", href: "/our-work" },
@@ -47,11 +47,14 @@ export const Navbar = () => {
     <a 
       key={index} 
       href={item.href} 
-      className={`text-[16px] capitalize cursor-pointer ${index === 4 && "ml-40"}`}
+      className={`lg:text-[16px] text-[1.5vw]  capitalize cursor-pointer ${index === 4 && "ml-[10vw]"}`}
     >
       {item.text}
     </a>
             ))}
+      </div>
+      <div className="block md:hidden">
+      <CiMenuFries />
       </div>
     </div>
   );

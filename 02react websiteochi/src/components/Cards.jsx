@@ -14,7 +14,7 @@ function Cards() {
   return (
     <div className='w-full py-10 '>
         <div className='px-16 py-5'>
-            <h1 className='text-[4vw] font-[new] '>Featured Projects</h1>
+            <h1 className='text-3xl md:text-[4vw] font-[new] '>Featured Projects</h1>
         </div>
         <div className='w-full h-[1px] bg-gray-800'></div>
         <div className='w-full px-16 py-12 flex gap-5'>
@@ -26,7 +26,7 @@ function Cards() {
             className='card relative w-[50vw]'>
             <div className=' w-full h-[30vw] bg-red-100 rounded-3xl overflow-hidden'>
                 <div className='absolute z-10  top-1/2 left-full -translate-x-[50%] -translate-y-[50%]'>
-                <h1 className='text-[5vw] font-[fot] flex overflow-hidden uppercase'>
+                <h1 className='text-[5vw] font-[fot] flex overflow-hidden uppercase text-[#cdea68]'>
                         {"Fyde".split("").map((item,index) =>(
                             <motion.span initial={{y:"100%"}} animate={cards[0]} transition={{ease:[0.22,1, 0.36,1],delay: index*.05}}>{item}</motion.span>
                         ))}
@@ -42,7 +42,7 @@ function Cards() {
             className='card relative w-[50vw]'>
             <div className='w-full h-[30vw] bg-red-100 rounded-3xl overflow-hidden'>
             <div className='absolute z-10  top-1/2 right-full translate-x-[50%] -translate-y-[50%]'>
-                    <h1 className='text-[5vw] font-[fot] flex overflow-hidden uppercase'>
+                    <h1 className='text-[5vw] font-[fot] flex overflow-hidden uppercase text-[#cdea68]'>
                     {"Vise".split("").map((item,index) =>(
                             <motion.span initial={{y:"100%"}} animate={cards[1]} transition={{ease:[0.22,1, 0.36,1],delay: index*.05}}>{item}</motion.span>
                         ))}

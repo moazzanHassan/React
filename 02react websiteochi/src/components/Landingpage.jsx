@@ -4,7 +4,7 @@ import { FaArrowUpLong } from "react-icons/fa6";
 function Landingpage() {
   
   return (
-    <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full h-screen bg-gray-900 text-white pt-1 px-20'>
+    <div data-scroll data-scroll-section data-scroll-speed="-.3" className='w-full h-[80vh] md:h-screen px-10 md:px-20 bg-gray-900 text-white pt-1 '>
   <div className="textstructure mt-32">
     {["We Create", "Eye Opening", "Presentations"].map((item, index) => (
       <div 
@@ -25,10 +25,10 @@ function Landingpage() {
       </div>
     ))}
   </div>
-  <div className='border-t-[1px] border-zinc-800 mt-32 flex items-center justify-between py-4 px-15'>
-    {["For public and private companies","From the first pitch to the last pitch IPO"].map((item,index)=>(<p className='text-[1vw]'>{item}</p>))}
-    <div className='flex items-center gap-5'>
-      <div className='uppercase text-[1vw] text-nowrap px-3 py-1 border-[1px] border-gray-300 rounded-full '>
+  <div className='border-t-[1px] border-zinc-800 mt-20 md:mt-32 flex-col sm:flex-row flex sm:items-center items-start sm:justify-between py-4 px-15'>
+    {["For public and private companies","From the first pitch to the last pitch IPO"].map((item,index)=>(<p className='text-sm mt-2 sm:mt-0 sm:text-[1vw] text-[1vw]'>{item}</p>))}
+    <div className='flex items-center mt-5 sm:mt-0  gap-5'>
+      <div className='uppercase text-sm  md:text-[1vw] text-nowrap px-3 py-1 border-[1px] border-gray-300 rounded-full '>
         start the new project
       </div>
       <div className='px-2 py-2 border-[1px] border-gray-300 rounded-full rotate-[45deg]'>

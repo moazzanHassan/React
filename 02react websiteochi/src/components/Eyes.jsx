@@ -38,8 +38,8 @@ function Eyes() {
       {/* Eyes */}
       <div  className="flex gap-10 absolute z-2 top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
         {/* Eye 1 */}
-        <div className="flex justify-center items-center w-[10vw] h-[10vw] bg-zinc-100 rounded-full">
-          <div className="relative w-[7vw] h-[7vw] bg-zinc-900 rounded-full">
+        <div className="flex justify-center items-center w-[30vw] md:w-[10vw] md:h-[10vw] h-[30vw] bg-zinc-100 rounded-full">
+          <div className="relative w-[10vw] md:w-[7vw] h-[10vw] md:h-[7vw] bg-zinc-900 rounded-full">
             <div
               style={{ transform: `translate(-50%, -50%) rotate(${rotate}deg)` }}
               className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full h-[3vw]"
@@ -50,8 +50,8 @@ function Eyes() {
         </div>
 
         {/* Eye 2 */}
-        <div className="flex justify-center items-center w-[10vw] h-[10vw] bg-zinc-100 rounded-full">
-          <div className="relative w-[7vw] h-[7vw] bg-zinc-900 rounded-full">
+        <div className="flex justify-center items-center w-[30vw] md:w-[10vw] md:h-[10vw] h-[30vw] bg-zinc-100 rounded-full">
+          <div className="relative w-[10vw] md:w-[7vw] h-[10vw] md:h-[7vw] bg-zinc-900 rounded-full">
             <div
               style={{ transform: `translate(-50%, -50%) rotate(${rotate}deg)` }}
               className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full h-[3vw]"
