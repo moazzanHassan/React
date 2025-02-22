@@ -1,17 +1,25 @@
 import React from 'react';
 
 const Login = () => {
+  const submitHandler =(e)=>{
+    e.preventDefault()
+    console.log("hello form submittednpm")
+  }
   return (
     <div className="flex h-screen w-screen justify-center items-center bg-gray-900">
       <div className="border-2 h-1/2 w-1/3 border-emerald-600 rounded-xl "style={{padding:"20px"}}>
-        <form className="flex flex-col justify-center items-center h-full space-y-4">
+        <form onSubmit={(e)=>{
+          submitHandler(e)
+        }} className="flex flex-col justify-center items-center h-full space-y-4">
           <input
+          required
           style={{ padding: '10px' }}
             className="border-2 bg-transparent border-emerald-600 outline-none text-white placeholder:text-gray-400 text-xl rounded-full px-4 py-2 w-full"
             type="email"
             placeholder="Enter your email"
           />
           <input
+          required
           style={{ padding: '10px', marginTop:"10px" }}
             className="border-2 bg-transparent border-emerald-600 outline-none text-white placeholder:text-gray-400 text-xl rounded-full px-4 py-2 w-full"
             type="password"
