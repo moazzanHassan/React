@@ -12,3 +12,6 @@ html,body{
 body{
     background-color: #413d3d;
 }
+#task-list::-webkit-scrollbar{
+    display:none
+}
