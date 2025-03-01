@@ -10,7 +10,7 @@ html,body{
     height: 100%;
 }
 body{
-    background-color: #413d3d;
+    background-color: #0b0909;
 }
 #task-list::-webkit-scrollbar{
     display:none
