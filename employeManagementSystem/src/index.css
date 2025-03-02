@@ -15,3 +15,6 @@ body{
 #task-list::-webkit-scrollbar{
     display:none
 }
+#tskLstScr::-webkit-scrollbar{
+    display:none
+}

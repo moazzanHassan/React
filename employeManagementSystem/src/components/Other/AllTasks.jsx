@@ -2,7 +2,7 @@ import React from 'react'
 
 const AllTasks = () => {
   return (
-    <div style={{padding:"20px"}} className='bg-[#1c1c1c]'>
+    <div id='tskLstScr' style={{padding:"20px"}} className='bg-[#1c1c1c] h-40 overflow-auto'>
         <div style={{padding:"20px 40px 20px 40px", marginTop:"30px" }} className='bg-fuchsia-400 flex justify-between rounded'>
             <h2>Moazzan</h2>
             <h3>Make a Ui Design</h3>
