@@ -133,4 +133,9 @@ const admin = [
       }
     ]
   
-  
+  export const setLocalStorage = ()=>{
+    localStorage.setItem("employee",JSON.stringify(employees))
+  }
+  export const getLocalStorage = ()=>{
+
+  }
