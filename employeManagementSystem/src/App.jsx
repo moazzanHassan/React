@@ -11,11 +11,14 @@ function App() {
   // })
   
   const [user, setUser] = useState(null);
+  const authData = useContext(AuthContext);
 
   const handleUser = (email,password)=>{
     if (email == "admin@mail.com" && password == 123){
       setUser("admin")
-    }else if(email == "user@mail.com" && password == 123){
+    }else if(authData && authData.employee.find((e)=>{
+      
+    })){
       setUser("employee")
     }
     else{
@@ -23,8 +26,7 @@ function App() {
     }
   }
   // handleLogin("user@mail.com",123)
-  const data = useContext(AuthContext);
-  console.log(data)
+  
   return (
     <>
    {!user ? <Login handleUser={handleUser} />:""}  
