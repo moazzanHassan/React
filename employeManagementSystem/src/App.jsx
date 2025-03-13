@@ -10,6 +10,8 @@ function App() {
   //   getLocalStorage()
   // })
   
+  present
+  
   const [user, setUser] = useState(null);
   const authData = useContext(AuthContext);
 
