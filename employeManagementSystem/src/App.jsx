@@ -10,18 +10,24 @@ function App() {
   //   getLocalStorage()
   // })
   
-  present
-  
   const [user, setUser] = useState(null);
   const authData = useContext(AuthContext);
 
+  useEffect(() => {
+   if(authData){
+    const loggedInUser = localStorage.getItem("loggedIn")
+   }
+  }, [authData])
+  
+
   const handleUser = (email,password)=>{
-    if (email == "admin@mail.com" && password == 123){
+    if (authData && authData.admin.find((e)=>email == e.email && e.password == password)){
       setUser("admin")
-    }else if(authData && authData.employee.find((e)=>{
-      
-    })){
+      localStorage.setItem('loggedInUser',JSON.stringify({role:'admin'}))
+    }else if(authData && authData.employees.find((e)=>email == e.email && e.password == password)){
       setUser("employee")
+      localStorage.setItem('loggedInUser',JSON.stringify({role:'admin'}))
+
     }
     else{
       alert("invalid credentials ")
