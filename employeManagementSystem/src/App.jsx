@@ -13,19 +13,26 @@ function App() {
   const [user, setUser] = useState(null);
   const authData = useContext(AuthContext);
 
-  useEffect(() => {
-   if(authData){
-    const loggedInUser = localStorage.getItem("loggedIn")
-   }
-  }, [authData])
+  // useEffect(() => {
+  //  if(authData){
+  //   const loggedInUser = localStorage.getItem("loggedInUser")
+  //   if(loggedInUser){
+  //     setUser(loggedInUser.role)
+  //   }
+  //  }
+  // }, [authData])
   
 
   const handleUser = (email,password)=>{
     if (authData && authData.admin.find((e)=>email == e.email && e.password == password)){
-      setUser("admin")
+      setUser({role:"admin"})
       localStorage.setItem('loggedInUser',JSON.stringify({role:'admin'}))
-    }else if(authData && authData.employees.find((e)=>email == e.email && e.password == password)){
-      setUser("employee")
+    }else if(authData){
+      const employee = authData.employees.find((e)=>email == e.email && e.password == password)
+      if (employee){
+
+        setUser({role:employee})
+      }
       localStorage.setItem('loggedInUser',JSON.stringify({role:'admin'}))
 
     }
