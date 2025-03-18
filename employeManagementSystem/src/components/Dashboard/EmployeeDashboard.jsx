@@ -14,9 +14,9 @@ const EmployeeDashboard = ({ data }) => {
 
   return (
     <div className="h-screen bg-[#1C1C1C] p-5 text-white">
-      <Header data= {data.id}/>
-      <TaskListNumbers data= {data.id} />
-      <TaskList data= {data.id}  />
+      <Header data= {data}/>
+      <TaskListNumbers data= {data} />
+      <TaskList data= {data}  />
     </div>
   );
 };
