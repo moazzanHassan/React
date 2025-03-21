@@ -11,7 +11,10 @@ const AcceptTask = () => {
             <h2 className='text-2xl font-bold'>Make a youtube video</h2>
             <p className='text-sm font-sans'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati blanditiis veritatis quaerat adipisci nisi distinctio.</p>
           </div>
-
+          <div style={{marginTop : "20px"}} className='flex justify-between'>
+            <button style={{padding : "20px 30px 20px 30px"}} className='bg-green-500 text-sm'>Mark as Completed</button>
+            <button style={{padding : "20px 30px 20px 30px"}} className='bg-red-500 text-sm'>Mark as Failed</button>
+          </div>
         </div>
   )
 }
