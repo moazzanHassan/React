@@ -11,6 +11,9 @@ const NewTask = () => {
             <h2 className='text-2xl font-bold'>Make a youtube video</h2>
             <p className='text-sm font-sans'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati blanditiis veritatis quaerat adipisci nisi distinctio.</p>
           </div>
+          <div style={{marginTop:"15px"}}>
+            <button style={{padding:"10px 20px 10px 20px"}} className='bg-amber-400'>Accept Task</button>
+          </div>
 
         </div>
   )
